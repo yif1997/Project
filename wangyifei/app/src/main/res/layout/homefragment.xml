@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <com.bawei.wangyifei.activity.CustonView
+        android:id="@+id/cust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.bawei.wangyifei.activity.CustonView>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:visibility="gone"
+        android:id="@+id/simp"
+        app:placeholderImage="@drawable/sorry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <com.stx.xhb.xbanner.XBanner
+
+        android:id="@+id/xbanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"></com.stx.xhb.xbanner.XBanner>
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bitmap3"
+                android:textColor="#f4c554"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="哈哈"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/show1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bitmap2"
+                android:textColor="#2608d7"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="哈哈"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/show2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:id="@+id/title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bitmap1"
+                android:textColor="#fd7ff0"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="哈哈"/>
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/show3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
