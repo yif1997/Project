@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/b4">
+
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,8 +15,8 @@
         android:background="@drawable/shap" />
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/head"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
         fresco:roundAsCircle="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
@@ -25,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/head"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="@dimen/dp_20"
         android:text="我的名字是王大宝" />
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,24 +41,24 @@
             android:orientation="horizontal"
             >
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginLeft="24dp"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginLeft="@dimen/dp_24"
                 android:src="@drawable/my_icon_information_n_hdpi"/>
             <TextView
                 android:id="@+id/my_data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_gravity="center_vertical"
                 android:text="个人资料"/>
         </LinearLayout>
         <TextView
-            android:layout_width="267dp"
+            android:layout_width="@dimen/dp_267"
             android:layout_height="1dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_24"
             android:layout_marginBottom="3dp"
             android:background="#ededed"/>
 
@@ -66,25 +68,25 @@
             android:orientation="horizontal"
             >
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginLeft="24dp"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginLeft="@dimen/dp_24"
                 android:src="@drawable/my_icon_circle_n_hdpi"/>
             <TextView
                 android:id="@+id/my_circle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_gravity="center_vertical"
                 android:text="我的圈子"/>
         </LinearLayout>
         <TextView
-            android:layout_width="267dp"
+            android:layout_width="@dimen/dp_267"
             android:layout_height="1dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_3"
             android:background="#ededed"/>
 
         <LinearLayout
@@ -93,25 +95,25 @@
             android:orientation="horizontal"
             >
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginLeft="24dp"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginLeft="@dimen/dp_24"
                 android:src="@drawable/my_icon_foot_n_hdpi"/>
             <TextView
                 android:id="@+id/my_footprint"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_gravity="center_vertical"
                 android:text="我的足迹"/>
         </LinearLayout>
         <TextView
-            android:layout_width="267dp"
+            android:layout_width="@dimen/dp_267"
             android:layout_height="1dp"
-            android:layout_marginTop="3dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_3"
             android:background="#ededed"/>
 
         <LinearLayout
@@ -120,25 +122,25 @@
             android:orientation="horizontal"
             >
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginLeft="24dp"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginLeft="@dimen/dp_24"
                 android:src="@drawable/my_icon_wallet_n_hdpi"/>
             <TextView
                 android:id="@+id/my_wallet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_gravity="center_vertical"
                 android:text="我的钱包"/>
         </LinearLayout>
         <TextView
-            android:layout_width="267dp"
+            android:layout_width="@dimen/dp_267"
             android:layout_height="1dp"
             android:layout_marginTop="3dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginRight="24dp"
-            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="@dimen/dp_24"
+            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginBottom="@dimen/dp_3"
             android:background="#ededed"/>
 
         <LinearLayout
@@ -147,15 +149,15 @@
             android:orientation="horizontal"
             >
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginLeft="24dp"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:layout_marginLeft="@dimen/dp_24"
                 android:src="@drawable/my_icon_wallet_n_hdpi"/>
             <TextView
                 android:id="@+id/my_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="@dimen/dp_20"
                 android:layout_gravity="center_vertical"
                 android:text="我的收获地址"/>
         </LinearLayout>

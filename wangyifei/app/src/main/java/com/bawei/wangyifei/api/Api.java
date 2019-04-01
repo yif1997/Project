@@ -38,4 +38,23 @@ public class Api {
 
     //http://172.17.8.100/small/commodity/v1/findCommodityByCategory?=categoryId"+id+"&page=1&count=10
     public static final String classUrl = "http://172.17.8.100/small/commodity/v1/";
+
+    //http://172.17.8.100/small/order/verify/v1/findShoppingCart查询购物称
+    public static final String shopUrl = "http://172.17.8.100/small/order/verify/v1/";
+
+
+    //http://172.17.8.100/small/order/verify/v1/syncShoppingCart同步购物车
+    public static final String addShopUrl = "http://172.17.8.100/small/order/verify/v1/";
+
+
+    //http://172.17.8.100/small/user/verify/v1/addReceiveAddress
+    public static final String addressUrl = "http://172.17.8.100/small/user/verify/v1/";
+
+
+    //http://172.17.8.100/small/user/verify/v1/receiveAddressList
+    public static final String myaddressUrl = "http://172.17.8.100/small/user/verify/v1/";
+
+
+    //http://172.17.8.100/small/user/verify/v1/setDefaultReceiveAddress默认地址
+    public static final String defaultUrl = "http://172.17.8.100/small/user/verify/v1/";
 }

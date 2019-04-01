@@ -35,7 +35,7 @@ public class PicModel {
                 .subscribeWith(new DisposableSubscriber<PicBean>() {
                     @Override
                     public void onNext(PicBean picBean) {
-                        Log.i("aaaa",picBean.toString());
+
                         List<ResultBean1> result = picBean.getResult();
                         if (onPicListener!=null){
                             onPicListener.onPic(result);

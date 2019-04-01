@@ -9,6 +9,7 @@
     <com.bawei.wangyifei.activity.CustonView
         android:id="@+id/cust"
         android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dp_24"
         android:layout_height="wrap_content"></com.bawei.wangyifei.activity.CustonView>
 
     <com.facebook.drawee.view.SimpleDraweeView
@@ -49,7 +50,7 @@
                 android:background="@drawable/bitmap3"
                 android:textColor="#f4c554"
                 android:gravity="center"
-                android:textSize="18sp"
+                android:textSize="@dimen/sp_18"
                 android:text="哈哈"/>
 
             <android.support.v7.widget.RecyclerView

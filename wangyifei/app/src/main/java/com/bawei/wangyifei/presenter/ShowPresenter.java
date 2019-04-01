@@ -32,4 +32,9 @@ public class ShowPresenter extends BasePresenter{
             }
         });
     }
+
+    @Override
+    public void sendShop(String userId, String sessionId) {
+
+    }
 }

@@ -35,7 +35,7 @@ public class HomeModel {
                 .subscribeWith(new DisposableSubscriber<JsonBean>() {
                     @Override
                     public void onNext(JsonBean jsonBean) {
-                        Log.i("xxx",jsonBean.toString());
+
                         List<ResultBean> result = jsonBean.getResult();
                         if (onSearchListener!=null){
                             onSearchListener.onSearch(result);

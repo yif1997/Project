@@ -7,16 +7,18 @@
 
     <com.facebook.drawee.view.SimpleDraweeView
         android:id="@+id/coat"
-        android:layout_width="50dp"
-        android:layout_height="45dp"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
         app:placeholderImage="@drawable/category_icon_coat_n_hdpi"/>
 
     <TextView
         android:id="@+id/tv1"
         android:layout_width="40dp"
         android:layout_height="40dp"
+
         android:textColor="#FFFFFF"
         android:layout_marginRight="30dp"
-        android:text="毛衣"/>
+        android:text="毛衣"
+        android:textSize="12sp"/>
 
 </LinearLayout>

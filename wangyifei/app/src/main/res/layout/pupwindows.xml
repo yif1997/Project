@@ -8,13 +8,13 @@
     <android.support.v7.widget.RecyclerView
         android:id="@+id/puprecy"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+        android:layout_height="@dimen/dp_36"
+        ></android.support.v7.widget.RecyclerView>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/puprecy2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"></android.support.v7.widget.RecyclerView>
+        android:layout_height="@dimen/dp_92"
+       ></android.support.v7.widget.RecyclerView>
 
 </LinearLayout>

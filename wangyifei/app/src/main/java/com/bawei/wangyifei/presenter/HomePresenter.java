@@ -37,4 +37,8 @@ public class HomePresenter extends BasePresenter<SearchView> {
     }
 
 
+    @Override
+    public void sendShop(String userId, String sessionId) {
+
+    }
 }

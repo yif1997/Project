@@ -4,83 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    >
     <FrameLayout
         android:id="@+id/frag"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dp_0"
         android:layout_weight="1"></FrameLayout>
     <RadioGroup
         android:id="@+id/radiogroup"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="@dimen/dp_81"
         android:background="@drawable/bottom"
-        android:orientation="horizontal"
-
-        >
-
+        android:orientation="horizontal">
         <RadioButton
             android:id="@+id/radiobutton1"
-            android:layout_marginTop="40dp"
-            android:layout_width="80dp"
-            android:layout_marginLeft="10dp"
-            android:layout_height="80dp"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_30"
+            android:layout_weight="1"
             android:button="@null"
-            android:checked="true"
-            android:background="@drawable/selet3"
-
-            android:gravity="center"
-            />
+            android:drawableTop="@drawable/selet3"
+            android:layout_gravity="bottom"/>
         <RadioButton
             android:id="@+id/radiobutton2"
-            android:layout_marginLeft="33dp"
-            android:layout_marginTop="40dp"
-            android:layout_width="80dp"
-
-            android:layout_height="80dp"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_40"
+            android:layout_weight="1"
             android:button="@null"
-            android:background="@drawable/selet4"
-
-            android:gravity="center"
-            />
+            android:drawableTop="@drawable/selet4"
+            android:layout_gravity="bottom"/>
         <RadioButton
-            android:layout_marginLeft="33dp"
             android:id="@+id/radiobutton3"
-            android:layout_marginTop="40dp"
-            android:layout_width="120dp"
-
-            android:layout_height="120dp"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_50"
+            android:layout_weight="1"
             android:button="@null"
-            android:background="@drawable/shop"
-            android:textSize="20sp"
-            android:gravity="center"
-            />
+            android:drawableTop="@drawable/shop"
+            android:layout_gravity="center"/>
         <RadioButton
-            android:layout_marginLeft="30dp"
             android:id="@+id/radiobutton4"
-            android:layout_marginTop="40dp"
-            android:layout_width="80dp"
-
-            android:layout_height="80dp"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_30"
+            android:layout_weight="1"
             android:button="@null"
-            android:background="@drawable/selet2"
-
-            android:gravity="center"
-            />
+            android:drawableTop="@drawable/selet2"
+            android:layout_gravity="bottom" />
         <RadioButton
-            android:layout_marginLeft="30dp"
             android:id="@+id/radiobutton5"
-            android:layout_marginTop="40dp"
-            android:layout_width="80dp"
-
-            android:layout_height="80dp"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_30"
+            android:layout_weight="1"
             android:button="@null"
-
-            android:gravity="center"
-            android:background="@drawable/selet"/>
+            android:drawableTop="@drawable/selet"
+            android:layout_gravity="bottom" />
     </RadioGroup>
-
 
 </LinearLayout>

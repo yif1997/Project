@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import com.bawei.wangyifei.R;
 import com.bawei.wangyifei.activity.LoginActivity;
+import com.bawei.wangyifei.activity.MyAddressActivity;
 import com.bawei.wangyifei.bean.Login;
 import com.facebook.drawee.view.SimpleDraweeView;
 
@@ -29,6 +30,7 @@ public class MyFragement extends Fragment{
 
     private SimpleDraweeView head;
     private TextView myname;
+    private TextView my_address;
 
 
     @Nullable
@@ -39,6 +41,15 @@ public class MyFragement extends Fragment{
         //找控件
         head = view.findViewById(R.id.head);
         myname = view.findViewById(R.id.my_name);
+        my_address = view.findViewById(R.id.my_address);
+
+        my_address.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MyAddressActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
         //注册
@@ -72,6 +83,7 @@ public class MyFragement extends Fragment{
     @Override
     public void onDestroy() {
         super.onDestroy();
-        EventBus.getDefault().register(this);
+        EventBus.getDefault().unregister(this);
+
     }
 }

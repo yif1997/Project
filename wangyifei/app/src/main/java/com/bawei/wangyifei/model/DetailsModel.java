@@ -33,7 +33,7 @@ public class DetailsModel {
                 .subscribeWith(new DisposableSubscriber<DetailsBean>() {
                     @Override
                     public void onNext(DetailsBean detailsBean) {
-                        Log.i("qqqq",detailsBean.toString());
+
                         Details result = detailsBean.getResult();
                         if (onDetailsListener!=null){
                             onDetailsListener.onDetails(result);

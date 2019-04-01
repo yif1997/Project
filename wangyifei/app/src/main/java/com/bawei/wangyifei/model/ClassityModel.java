@@ -36,7 +36,7 @@ public class ClassityModel {
                 .subscribeWith(new DisposableSubscriber<ClassityBean>() {
                     @Override
                     public void onNext(ClassityBean classityBean) {
-                        Log.i("hhhh",classityBean.toString());
+
                         List<Classity> result = classityBean.getResult();
                         if (onClassityListener!=null){
                             onClassityListener.onClassity(result);

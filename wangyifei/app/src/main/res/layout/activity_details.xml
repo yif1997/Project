@@ -7,27 +7,78 @@
     tools:context=".activity.DetailsActivity"
     android:orientation="vertical">
 
-    <com.stx.xhb.xbanner.XBanner
-        android:id="@+id/xbanner"
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        ></com.stx.xhb.xbanner.XBanner>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="aaa"/>
 
-    <TextView
-        android:id="@+id/jia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="#F00"
-        android:text="sdda"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <com.stx.xhb.xbanner.XBanner
+                    android:id="@+id/xbanner"
+                    android:layout_marginRight="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_width="@dimen/dp_312"
+                    android:layout_height="@dimen/dp_274"
+                    ></com.stx.xhb.xbanner.XBanner>
 
-    <WebView
-        android:id="@+id/webview"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></WebView>
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="aaa"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:id="@+id/jia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="sdda"
+                    android:textColor="#F00" />
+
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    ></WebView>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/dp_100"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/add_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_24"
+                />
+            <ImageView
+                android:id="@+id/btn_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/buy"
+                android:layout_marginTop="@dimen/dp_30"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_24"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
 </LinearLayout>

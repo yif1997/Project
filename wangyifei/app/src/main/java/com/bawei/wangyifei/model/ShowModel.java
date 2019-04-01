@@ -34,7 +34,7 @@ public class ShowModel {
                 .subscribeWith(new DisposableSubscriber<ShowBean>() {
                     @Override
                     public void onNext(ShowBean showBean) {
-                        Log.i("ssss",showBean.toString());
+
                         ShowResult result = showBean.getResult();
                         if (onShowListener!=null){
                             onShowListener.onShow(result);

@@ -22,7 +22,10 @@
         <activity android:name=".activity.DetailsActivity" />
         <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.RegistActivity" />
-        <activity android:name=".activity.AssActivity"></activity>
+        <activity android:name=".activity.AssActivity" />
+        <activity android:name=".activity.MyAddressActivity" />
+        <activity android:name=".activity.NewAddressActivity" />
+        <activity android:name=".activity.BalanceActivity"></activity>
     </application>
 
 </manifest>

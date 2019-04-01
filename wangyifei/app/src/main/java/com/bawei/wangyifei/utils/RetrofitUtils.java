@@ -57,6 +57,8 @@ public class RetrofitUtils {
                                 .addHeader("userId",userId)
                                 .addHeader("sessionId",sessionId)
                                 .build();
+
+                        Log.i("yiyi",userId);
                         return chain.proceed(request);
                     }
                 })
@@ -67,7 +69,7 @@ public class RetrofitUtils {
 
 
     //retrofit带拦截器 请求头
-    public static Retrofit getRetrofit(String url,String userId,String sessionId){
+    public static Retrofit getRetrofits(String url,String userId,String sessionId){
         Retrofit retrofit = new Retrofit.Builder()
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
@@ -92,7 +94,8 @@ public class RetrofitUtils {
 
     //获取动态代理（带拦截器）
     public <T> T doGet(String url,String userId,String sessionId,Class<T> service){
-        Retrofit retrofit = getRetrofit(url, userId, sessionId);
+
+        Retrofit retrofit = getRetrofits(url, userId, sessionId);
         return retrofit.create(service);
     }
 

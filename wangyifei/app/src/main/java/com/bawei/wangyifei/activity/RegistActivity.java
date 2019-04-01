@@ -61,8 +61,7 @@ public class RegistActivity extends BaseActivity implements RegistView {
 
     @Override
     public void onRegist(String message, String status) {
-        Log.i("ddddd",status);
-        Log.i("llll",message);
+
         if (status.equals("0000"))
             Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
         return;

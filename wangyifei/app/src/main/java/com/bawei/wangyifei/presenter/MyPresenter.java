@@ -6,4 +6,8 @@ package com.bawei.wangyifei.presenter;
  * @package com.bawei.wangyifei.presenter
  **/
 public class MyPresenter extends BasePresenter {
+    @Override
+    public void sendShop(String userId, String sessionId) {
+
+    }
 }

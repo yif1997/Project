@@ -26,8 +26,6 @@ public class LoginActivity extends BaseActivity implements LoginView ,View.OnCli
     private Button login;
     private LoginPresenter loginPresenter;
     private TextView regist;
-    private SharedPreferences sp;
-    private SharedPreferences.Editor edit;
 
     @Override
     protected int layoutResID() {
@@ -52,20 +50,25 @@ public class LoginActivity extends BaseActivity implements LoginView ,View.OnCli
 
     @Override
     protected void initData() {
-        sp = getSharedPreferences("Login", Context.MODE_PRIVATE);
-        //获得edit对象
-        edit = sp.edit();
+
+
 
     }
 
 
     @Override
     public void onLogin(String status, Login result) {
-        if (status.equals("0000")){
-            Toast.makeText(this, "登录成功", Toast.LENGTH_SHORT).show();
+        String sessionId = result.getSessionId();
+        String userId = result.getUserId();
+        SharedPreferences sp = getSharedPreferences("Login", Context.MODE_PRIVATE);
+        SharedPreferences.Editor edit = sp.edit();
+        edit.putString("userId",userId);
+        edit.putString("sessionId",sessionId);
+        edit.commit();
+        //发送
             EventBus.getDefault().post(result);
             finish();
-        }
+
     }
 
     @Override

@@ -10,12 +10,14 @@ public class Details {
     public String price;
     public String picture;
     public String details;
+    public String commodityId;
 
-    public Details(String commodityName, String price, String picture, String details) {
+    public Details(String commodityName, String price, String picture, String details, String commodityId) {
         this.commodityName = commodityName;
         this.price = price;
         this.picture = picture;
         this.details = details;
+        this.commodityId = commodityId;
     }
 
     public String getCommodityName() {
@@ -50,6 +52,14 @@ public class Details {
         this.details = details;
     }
 
+    public String getCommodityId() {
+        return commodityId;
+    }
+
+    public void setCommodityId(String commodityId) {
+        this.commodityId = commodityId;
+    }
+
     @Override
     public String toString() {
         return "Details{" +
@@ -57,6 +67,7 @@ public class Details {
                 ", price='" + price + '\'' +
                 ", picture='" + picture + '\'' +
                 ", details='" + details + '\'' +
+                ", commodityId='" + commodityId + '\'' +
                 '}';
     }
 }

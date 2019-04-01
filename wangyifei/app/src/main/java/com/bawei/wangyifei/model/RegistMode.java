@@ -37,7 +37,7 @@ public class RegistMode {
                 .subscribeWith(new DisposableSubscriber<RegistBean>() {
                     @Override
                     public void onNext(RegistBean registBean) {
-                        Log.i("kkkk",registBean.toString());
+
                         String message = registBean.getMessage();
                         String status = registBean.getStatus();
                         if (onRegistListener!=null){

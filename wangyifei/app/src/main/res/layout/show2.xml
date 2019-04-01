@@ -6,14 +6,17 @@
     android:background="#FFFFFF">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_118"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:layout_marginTop="@dimen/dp_10">
 
         <com.facebook.drawee.view.SimpleDraweeView
             android:id="@+id/pic2"
-            android:layout_width="200dp"
-            android:layout_height="200dp" />
+            android:layout_margin="@dimen/dp_10"
+            android:layout_width="@dimen/dp_85"
+            android:layout_height="@dimen/dp_98" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -22,6 +25,7 @@
 
             <TextView
                 android:id="@+id/name2"
+                android:layout_marginTop="@dimen/dp_20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="assdad"/>

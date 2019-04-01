@@ -33,13 +33,14 @@ public class LoginModel {
     public void sendLogin(String phone, String pwd) {
        map.put("phone",phone);
        map.put("pwd",pwd);
-        ApiService apiService = RetrofitUtils.getInstance().doGet(Api.loginUrl, null, null, ApiService.class);
+        ApiService apiService = RetrofitUtils.getInstance().doGet(Api.loginUrl, ApiService.class);
         apiService.getLogin(map)
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .subscribeWith(new DisposableSubscriber<LoginBean>() {
                     @Override
                     public void onNext(LoginBean loginBean) {
+
                         String status = loginBean.getStatus();
                         Login result = loginBean.getResult();
                         if (onLoginListener!=null){

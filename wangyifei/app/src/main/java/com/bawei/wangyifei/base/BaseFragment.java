@@ -41,6 +41,7 @@ public abstract class BaseFragment<T extends BasePresenter> extends Fragment {
 
 
 
+
     protected abstract T getPresenter();
 
     protected abstract int layoutResID();

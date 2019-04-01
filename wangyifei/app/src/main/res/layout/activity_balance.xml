@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BalanceActivity"
+    android:orientation="vertical">
+    
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/dp_312"
+        android:layout_height="@dimen/dp_98"
+        app:cardCornerRadius="@dimen/dp_12"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:background="#FFF">
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/dp_312"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="@dimen/dp_12"
+        android:background="#FFF"
+        android:layout_marginLeft="@dimen/dp_24">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/bala_recy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.CardView>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/bala_shop"
+            android:layout_width="@dimen/dp_242"
+            android:layout_height="@dimen/dp_50"
+            android:text="as"/>
+
+        
+        
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="@dimen/dp_118"
+            android:layout_height="@dimen/dp_50"
+            android:background="#ff5e70"
+            android:text="提交订单"/>
+    </LinearLayout>
+
+</LinearLayout>

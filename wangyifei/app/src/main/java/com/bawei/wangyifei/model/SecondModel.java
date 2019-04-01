@@ -35,7 +35,7 @@ public class SecondModel {
                 .subscribeWith(new DisposableSubscriber<SecondBean>() {
                     @Override
                     public void onNext(SecondBean secondBean) {
-                        Log.i("zzzz",secondBean.toString());
+
                         List<Second> result = secondBean.getResult();
                         if (onSecondListener!=null){
                             onSecondListener.onSecond(result);

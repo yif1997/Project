@@ -76,7 +76,6 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements SearchV
     @Override
     protected HomePresenter getPresenter() {
         presenter = new HomePresenter(this);
-
         return presenter;
     }
 
@@ -256,7 +255,7 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements SearchV
 
 
         //pop设置颜色
-        popupWindow.setBackgroundDrawable(new ColorDrawable(Color.RED));
+        popupWindow.setBackgroundDrawable(new ColorDrawable(Color.GRAY));
 
         //pop里面的控件点不了 因为没有焦点
         //给pop设置焦点
@@ -285,7 +284,7 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements SearchV
 
                 Intent intent = new Intent(getContext(), AssActivity.class);
                 intent.putExtra("categoryId",id);
-                Log.i("pppp",id);
+
                 startActivity(intent);
 
             }

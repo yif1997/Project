@@ -53,7 +53,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.github.xiaohaibin:XBanner:1.6.1'
 
-
+    implementation 'com.github.open-android:CityPickerWebView:0.1.0'
 }
 //需要配置解决冲突
 configurations.all {

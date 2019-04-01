@@ -9,19 +9,21 @@ import java.lang.ref.WeakReference;
  * @package com.bawei.wangyifei.presenter
  **/
 public abstract class BasePresenter<T> {
+    public abstract void sendShop(String userId, String sessionId);
 
-//    private WeakReference<T> tWeakReference;
-//
-//    public void attachView(T t){
-//        tWeakReference = new WeakReference<T>(t);
-//    }
-//
-//    public void destoryView(){
-//        if (tWeakReference!=null){
-//            tWeakReference.clear();
-//            tWeakReference=null;
-//        }
-//    }
+
+   private WeakReference<T> tWeakReference;
+
+    public void attachView(T t){
+        tWeakReference = new WeakReference<T>(t);
+    }
+
+    public void destoryView(){
+        if (tWeakReference!=null){
+            tWeakReference.clear();
+            tWeakReference=null;
+        }
+    }
 
 
 

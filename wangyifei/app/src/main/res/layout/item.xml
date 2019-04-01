@@ -2,25 +2,29 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/dp_10">
 
     <ImageView
         android:id="@+id/menu"
-        android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_24"
         android:src="@drawable/menu"/>
     
     <EditText
         android:id="@+id/et"
-        android:layout_width="510dp"
-        android:layout_height="50dp"
+        android:layout_width="@dimen/dp_230"
+        android:layout_height="@dimen/dp_30"
         android:background="@drawable/edittext"
+        android:layout_marginLeft="@dimen/dp_20"
         android:hint="请输入搜索内容……"/>
     
     <ImageView
         android:id="@+id/search"
-        android:layout_width="50dp"
-        android:layout_height="match_parent"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:layout_marginLeft="@dimen/dp_10"
         android:src="@drawable/search"/>
 
 </LinearLayout>

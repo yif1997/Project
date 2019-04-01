@@ -2,22 +2,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/dp_10"
+    android:layout_marginTop="@dimen/dp_5"
     android:orientation="vertical">
+    
+    
+    
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/dp_151"
+        android:layout_height="@dimen/dp_174"
+        app:cardCornerRadius="@dimen/dp_20">
 
-    <com.facebook.drawee.view.SimpleDraweeView
-        android:id="@+id/simp"
-        android:layout_width="200dp"
-        android:layout_height="200dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_10">
 
-    <TextView
-        android:id="@+id/name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ssdcs"/>
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/simp"
+                android:layout_width="@dimen/dp_131"
+                android:layout_height="@dimen/dp_102" />
 
-    <TextView
-        android:id="@+id/price"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="sasa"/>
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ssdcs"/>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sasa"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
 </LinearLayout>
